@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'self'; img-src 'self' data:; base-uri 'none'; form-action 'none'">
+<meta name="referrer" content="no-referrer">
+<meta name="color-scheme" content="light dark">
+<title>FamilyReel Support</title>
+<meta name="description" content="Help with FamilyReel for Mac: scanners, the Local Network permission, adding more scanners, purchases, Family Sharing and refunds.">
+<link rel="icon" href="../assets/mark.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../assets/site.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="../" aria-label="FamilyReel home">
+      <svg viewBox="0 0 32 32" aria-hidden="true" focusable="false"><path fill="currentColor" fill-rule="evenodd" d="M16 1a15 15 0 1 1 0 30 15 15 0 0 1 0-30Zm0 3.6a4.4 4.4 0 1 0 0 8.8 4.4 4.4 0 0 0 0-8.8Zm-7.9 13.7a4.4 4.4 0 1 0 0 8.8 4.4 4.4 0 0 0 0-8.8Zm15.8 0a4.4 4.4 0 1 0 0 8.8 4.4 4.4 0 0 0 0-8.8ZM16 14.2a1.8 1.8 0 1 0 0 3.6 1.8 1.8 0 0 0 0-3.6Z"/></svg>
+      FamilyReel
+    </a>
+    <nav class="site-nav" aria-label="Main">
+      <ul>
+        <li><a href="../">Home</a></li>
+        <li><a href="../compatibility/">Scanners</a></li>
+        <li><a href="./" aria-current="page">Support</a></li>
+        <li><a href="../privacy/">Privacy</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main" class="wrap">
+  <div class="prose">
+    <h1>Support</h1>
+    <p class="lead muted">Answers to the common questions are below. If yours isn’t here, write to us and a person will answer.</p>
+
+    <section aria-labelledby="contact">
+      <h2 id="contact">Contact</h2>
+      <p class="contact"><a href="mailto:support@flashmediasolutions.com">support@flashmediasolutions.com</a></p>
+      <p>Tell us your Mac model, your scanner models and what happened. The quickest way is <strong>Help › Send Report…</strong> in FamilyReel: it shows you exactly what it includes, then opens an email to us that you send yourself.</p>
+    </section>
+  </div>
+
+  <section aria-labelledby="scanners">
+    <h2 id="scanners">Scanners</h2>
+
+    <details id="which-scanners">
+      <summary>Which scanners work with FamilyReel?</summary>
+      <div>
+        <p>Network scanners and all-in-one printers that support <strong>AirScan</strong> (also called <strong>eSCL</strong>), the driver-free scanning standard most current network models use. The Mac and the scanner must be on the same network.</p>
+        <p>See the <a href="../compatibility/">compatibility list</a> for the models we’ve tested and how to check yours. The free version is the easiest test: if FamilyReel finds your scanner, it works.</p>
+      </div>
+    </details>
+
+    <details id="local-network">
+      <summary>FamilyReel says it isn’t allowed on the local network</summary>
+      <div>
+        <p>macOS asks once whether FamilyReel may use your local network, which is how it finds and talks to scanners. If that was turned down, or an update turned it off:</p>
+        <ol>
+          <li>Open <strong>System Settings › Privacy &amp; Security › Local Network</strong>.</li>
+          <li>Switch <strong>FamilyReel</strong> on.</li>
+          <li>Quit FamilyReel (<kbd>⌘Q</kbd>) and open it again.</li>
+        </ol>
+        <p>FamilyReel uses the local network only to talk to your scanners. It talks to nothing else.</p>
+      </div>
+    </details>
+
+    <details id="not-found">
+      <summary>FamilyReel doesn’t find my scanner</summary>
+      <div>
+        <ul>
+          <li>Wake the scanner (press a button on it) and check it is on Wi-Fi or Ethernet, not only USB.</li>
+          <li>Make sure the Mac and the scanner are on the same network. Guest networks and some mesh “isolation” settings keep devices apart.</li>
+          <li>Check the Local Network switch (see the answer above).</li>
+          <li>Turn off a VPN on the Mac while scanning, if you use one.</li>
+          <li>Add it by hand: <strong>Scanners › Add Scanner by Address…</strong>, then type the scanner’s IP address (it’s on the printer’s network status page).</li>
+        </ul>
+      </div>
+    </details>
+
+    <details id="more-scanners" open>
+      <summary>How do I add a second or third scanner?</summary>
+      <div>
+        <p>Turn it on and connect it to the same network. FamilyReel finds it within seconds and gives it its own card, with its own Scan button and shortcut (<kbd>⌘1</kbd> to <kbd>⌘9</kbd>). If it doesn’t appear, choose <strong>Scanners › Add Scanner by Address…</strong> and type its IP address.</p>
+        <ul>
+          <li><strong>Scan All</strong> (<kbd>⌘⇧↩</kbd>) starts every scanner that’s ready, each with its own settings.</li>
+          <li>Give each scanner a nickname (“Kitchen”, “Office”) so you know which is which from across the room.</li>
+          <li>Scan the empty glass once on each new scanner when FamilyReel asks. It helps find prints on that scanner’s lid.</li>
+          <li>Each scanner can feed its own album, handy when each one works through a different box.</li>
+        </ul>
+        <p>Borrowing a relative’s all-in-one for an afternoon works too: any AirScan scanner on your network can join.</p>
+      </div>
+    </details>
+
+    <details id="how-fast">
+      <summary>How much faster are several scanners?</summary>
+      <div>
+        <p>In our first big session, three everyday all-in-one printers scanned 278 family prints in 23 minutes at 300 dpi, about 12 photos a minute. Each scanner kept its own pace of about 4 photos a minute, because while one scans you’re loading the others. So each scanner you add adds its own pace.</p>
+        <p>FamilyReel shows your own pace live at the bottom of the window: photos, photos a minute and scanners.</p>
+      </div>
+    </details>
+
+    <details id="resolution">
+      <summary>Which resolution should I use?</summary>
+      <div>
+        <p>300 dpi is plenty for slideshows and a TV, and it’s quick. Choose 400 dpi or more if you want to print enlargements later. Higher is slower: on one tested scanner, a full glass took about 15 seconds at 300 dpi, 22 seconds at 400 and over a minute at 600. FamilyReel offers every resolution your scanner offers.</p>
+      </div>
+    </details>
+
+    <details id="tips">
+      <summary>Tips for good scans</summary>
+      <div>
+        <ul>
+          <li>Leave about a quarter inch (6 mm) between the prints and the edges of the glass. FamilyReel straightens them, so there’s no need to push them into a corner, where the frame hides the edge.</li>
+          <li>Several prints per scan is fine. Leave a little space between them.</li>
+          <li>Wipe the glass now and then. FamilyReel cleans dust specks from the Restored copy, but a clean glass is better.</li>
+          <li>FamilyReel always scans the glass. Don’t put old prints through a document feeder.</li>
+        </ul>
+      </div>
+    </details>
+  </section>
+
+  <section aria-labelledby="purchases">
+    <h2 id="purchases">Purchases</h2>
+
+    <details id="free">
+      <summary>What’s free, and what does FamilyReel Unlimited add?</summary>
+      <div>
+        <p>The free version does everything for up to 100 saved photos: scanning on all your scanners, cutting and straightening, restoring, ordering and playing slideshows. <strong>FamilyReel Unlimited</strong> is a one-time purchase that removes the 100-photo limit and unlocks movie export. There’s no subscription.</p>
+        <p>The photos you’ve saved are always yours, in your own folder, whether or not you buy.</p>
+      </div>
+    </details>
+
+    <details id="restore">
+      <summary>I bought FamilyReel Unlimited. How do I get it on another Mac?</summary>
+      <div>
+        <p>Sign in to the App Store with the same Apple Account, open FamilyReel, choose <strong>FamilyReel › FamilyReel Unlimited…</strong> and click <strong>Restore Purchases</strong>.</p>
+      </div>
+    </details>
+
+    <details id="family-sharing">
+      <summary>Does it work with Family Sharing?</summary>
+      <div>
+        <p>Yes. If the person who bought FamilyReel Unlimited shares purchases with their family through Family Sharing, everyone in the family group can use it on their own Mac with their own Apple Account. If it doesn’t show as unlocked, open <strong>FamilyReel › FamilyReel Unlimited…</strong> and click <strong>Restore Purchases</strong>.</p>
+      </div>
+    </details>
+
+    <details id="refunds">
+      <summary>How do I get a refund?</summary>
+      <div>
+        <p>Apple handles every App Store payment and refund, so we can’t issue them ourselves. Go to <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>, sign in, choose FamilyReel Unlimited and request a refund. Apple decides and lets you know.</p>
+      </div>
+    </details>
+  </section>
+
+  <section aria-labelledby="photos">
+    <h2 id="photos">Your photos and privacy</h2>
+
+    <details id="where">
+      <summary>Where are my photos?</summary>
+      <div>
+        <p>In <strong>Pictures › FamilyReel</strong>, or the folder you chose. Each album is a folder of numbered photos, with a <em>Restored</em> folder of color-restored copies and a <em>Full Scans</em> folder of the untouched scans. They’re ordinary image files any app can open.</p>
+      </div>
+    </details>
+
+    <details id="uploads">
+      <summary>Does FamilyReel upload my photos?</summary>
+      <div>
+        <p>No. Scanning, restoring, ordering and making movies all happen on your Mac. FamilyReel has no account, no analytics and no tracking. Read the <a href="../privacy/">privacy policy</a>.</p>
+      </div>
+    </details>
+
+    <details id="demo">
+      <summary>Can I try it without a scanner?</summary>
+      <div>
+        <p>Yes. Choose <strong>Help › Demo Mode</strong>. Three sample scanners scan sample prints that FamilyReel draws itself, so you can try every step, from Scan All to the slideshow.</p>
+      </div>
+    </details>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>© 2026 Flash Media Solutions, Inc.</p>
+    <ul>
+      <li><a href="../">Home</a></li>
+      <li><a href="../compatibility/">Scanners</a></li>
+      <li><a href="../privacy/">Privacy</a></li>
+    </ul>
+  </div>
+</footer>
+</body>
+</html>

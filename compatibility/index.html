@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'self'; img-src 'self' data:; base-uri 'none'; form-action 'none'">
+<meta name="referrer" content="no-referrer">
+<meta name="color-scheme" content="light dark">
+<title>FamilyReel Scanner Compatibility</title>
+<meta name="description" content="Which scanners work with FamilyReel for Mac: the models we’ve tested, the AirScan (eSCL) scanners that should work, and how to check yours.">
+<link rel="icon" href="../assets/mark.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../assets/site.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="../" aria-label="FamilyReel home">
+      <svg viewBox="0 0 32 32" aria-hidden="true" focusable="false"><path fill="currentColor" fill-rule="evenodd" d="M16 1a15 15 0 1 1 0 30 15 15 0 0 1 0-30Zm0 3.6a4.4 4.4 0 1 0 0 8.8 4.4 4.4 0 0 0 0-8.8Zm-7.9 13.7a4.4 4.4 0 1 0 0 8.8 4.4 4.4 0 0 0 0-8.8Zm15.8 0a4.4 4.4 0 1 0 0 8.8 4.4 4.4 0 0 0 0-8.8ZM16 14.2a1.8 1.8 0 1 0 0 3.6 1.8 1.8 0 0 0 0-3.6Z"/></svg>
+      FamilyReel
+    </a>
+    <nav class="site-nav" aria-label="Main">
+      <ul>
+        <li><a href="../">Home</a></li>
+        <li><a href="./" aria-current="page">Scanners</a></li>
+        <li><a href="../support/">Support</a></li>
+        <li><a href="../privacy/">Privacy</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main" class="wrap">
+  <div class="prose">
+    <h1>Scanner compatibility</h1>
+    <p class="lead muted">FamilyReel works with network scanners and all-in-one printers that support <strong>AirScan</strong>, also called <strong>eSCL</strong>: the driver-free scanning standard that most current network models use. You don’t install anything from the scanner’s maker.</p>
+    <p>Use as many as you have at the same time. Each one gets its own card and Scan button, and each one adds its own pace.</p>
+  </div>
+
+  <section aria-labelledby="tested">
+    <h2 id="tested">Tested</h2>
+    <div class="table-scroll">
+      <table class="stack">
+        <caption>Scanned with real prints over Wi-Fi. Times are for the whole glass, measured.</caption>
+        <thead>
+          <tr><th scope="col">Model</th><th scope="col">Resolutions</th><th scope="col">Whole glass</th><th scope="col">Notes</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">HP Smart Tank 5100 series</th>
+            <td data-label="Resolutions">75 to 1200 dpi, including 400</td>
+            <td data-label="Whole glass">300&nbsp;dpi: 15&nbsp;s<br>400&nbsp;dpi: 22&nbsp;s<br>600&nbsp;dpi: about&nbsp;75&nbsp;s</td>
+            <td data-label="Notes">FamilyReel defaults to 400 dpi on it. Its JPEG quality is fixed by the scanner. The opt-in “Best quality” uses uncompressed scans and is about 3 times slower.</td>
+          </tr>
+          <tr>
+            <th scope="row">Epson ET-2900 (EcoTank)</th>
+            <td data-label="Resolutions">100 to 1200 dpi (no 400)</td>
+            <td data-label="Whole glass">300&nbsp;dpi: 22&nbsp;s</td>
+            <td data-label="Notes">With no 400 dpi offered, FamilyReel uses 300 by default; any of its resolutions can be chosen. It answers over a secure connection, which FamilyReel handles by itself.</td>
+          </tr>
+          <tr>
+            <th scope="row">HP DeskJet 4100 series</th>
+            <td data-label="Resolutions">75 to 1200 dpi (no 400)</td>
+            <td data-label="Whole glass">300&nbsp;dpi: 18&nbsp;s</td>
+            <td data-label="Notes">It has a document feeder, but FamilyReel always scans the glass. Its lid is white, so a print with a white border can be marked “Check crop” for a quick look.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="muted small">All three together scanned 278 prints in 23 minutes in one session, about 12 photos a minute.</p>
+  </section>
+
+  <div class="prose">
+    <section aria-labelledby="should">
+      <h2 id="should">Should work</h2>
+      <p>Most current network all-in-one printers and scanners from <strong>HP</strong>, <strong>Epson</strong>, <strong>Canon</strong> and <strong>Brother</strong> support AirScan (eSCL), and should work the same way. Brands interpret the standard a little differently, so if yours misbehaves, tell us and we’ll look into it.</p>
+    </section>
+
+    <section aria-labelledby="check">
+      <h2 id="check">How to check your scanner</h2>
+      <ol>
+        <li><strong>Try FamilyReel free.</strong> It finds AirScan scanners on your network within seconds, and your first 100 photos are free. If it finds yours and scans, you’re set.</li>
+        <li><strong>Ask your Mac.</strong> If you can scan from the printer with macOS’s own Image Capture app, or from <strong>System Settings › Printers &amp; Scanners</strong>, without having installed the maker’s software, it almost certainly speaks AirScan.</li>
+        <li><strong>Read the spec sheet.</strong> Look for “AirScan”, “eSCL”, “Mopria Scan” or scanning through “AirPrint”.</li>
+      </ol>
+    </section>
+
+    <section aria-labelledby="not">
+      <h2 id="not">Not supported in this version</h2>
+      <ul>
+        <li>Scanners connected only by USB, with no network connection.</li>
+        <li>Sheet feeders and document feeders: FamilyReel always scans the glass, which is kinder to old prints.</li>
+        <li>Film, slide and negative scanning.</li>
+        <li>Scanners on a different network from the Mac, such as a guest Wi-Fi.</li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="tell">
+      <h2 id="tell">Tell us about yours</h2>
+      <p>Scanned with a model that isn’t listed, whether it worked or not? <a href="../support/#contact">Write to us</a> with the model name and we’ll add it here.</p>
+    </section>
+
+    <p class="muted small">Product names are trademarks of their owners and are used here only to describe compatibility. FamilyReel isn’t affiliated with or endorsed by any scanner maker.</p>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>© 2026 Flash Media Solutions, Inc.</p>
+    <ul>
+      <li><a href="../">Home</a></li>
+      <li><a href="../support/">Support</a></li>
+      <li><a href="../privacy/">Privacy</a></li>
+    </ul>
+  </div>
+</footer>
+</body>
+</html>
